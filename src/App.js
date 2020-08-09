@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
 
-function App() {
+import Navbar from "./components/Navbar";
+import CarouselSection from "./components/CarouselSection";
+import BestSellingBrands from "./components/BestSellingBrands";
+import TrendingCategory from "./components/TrendingCategory";
+// import ReactSlickDemo from "./components/ReactCarousel";
+import DiscountsOffersFavourites from "./components/DiscountsOffersFavourites";
+import TrendingBrands from "./components/TrendingBrands";
+import FloatingButton from "./components/FloatingButton";
+
+const ShopPlus = () => {
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [categories, setCategories] = useState([]);
+  useEffect(() => {
+    fetch("https://api.gyftr.net/smartbuyapi/hdfc/api/v1/home/categories")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          console.log("result", result);
+          setIsLoaded(true);
+          setCategories(result.data);
+        },
+        (error) => {
+          console.log("error", error);
+          setError(error);
+        }
+      );
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="App ">
+    <React.Fragment>
+      <div className="container">
+        {isLoaded && <Navbar categories={categories} isLoaded={isLoaded} />}
+      </div>
+      <CarouselSection />
+      <div className="container">
+        <BestSellingBrands />
+        <TrendingCategory />
+        {/* <ReactSlickDemo/> */}
+        <DiscountsOffersFavourites />
+        <TrendingBrands />
+        <FloatingButton/>
+      </div>
+    </React.Fragment>
+    // </div>
   );
-}
+};
 
-export default App;
+export default ShopPlus;
