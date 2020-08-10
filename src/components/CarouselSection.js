@@ -5,20 +5,20 @@ import Slider from "react-slick";
 
 const CarouselSection = () => {
   const settings = {
-    // dots: true,
+    autoplay: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows:true,
+    arrows: true,
   };
 
   return (
     <Slider className="carouselSection" {...settings}>
-      <div class="logo border">
+      <div className="logo border">
         <img src="/images/banner.jpg" alt="First slide"></img>
       </div>
-      <div class="logo border">
+      <div className="logo border">
         <img src="/images/banner.jpg" alt="First slide"></img>
       </div>
     </Slider>

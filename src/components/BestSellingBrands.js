@@ -5,9 +5,9 @@ const BestSellingBrands = () => {
   return (
     <React.Fragment>
       <div>
-        <h3 class="h4 fw-700 text-uppercase">best selling brands</h3>
+        <h3 className="h4 fw-700 text-uppercase">best selling brands</h3>
       </div>
-      <div class="row">
+      <div className="row">
         <BestSellingBrandsItem image="1.png" />
         <BestSellingBrandsItem image="2.png" />
         <BestSellingBrandsItem image="3.png" />

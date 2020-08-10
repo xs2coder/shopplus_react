@@ -2,8 +2,8 @@ import React from "react";
 
 const FloatingButton = () => {
   return (
-    <div class="">
-      <a  class="cartBtn">
+    <div className="">
+      <a href="index.html" className="cartBtn">
         <span>1</span>
         <img src="images/cart.png" alt="cart" />
       </a>

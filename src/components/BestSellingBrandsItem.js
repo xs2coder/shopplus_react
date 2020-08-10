@@ -1,15 +1,15 @@
 import React from "react";
 const BestSellingBrandsItem = ({ image }) => {
   return (
-    <div class="bestSellingBrandItem col s2">
-      <div class=" flex-container border">
-        <div class="padding">
+    <div className="bestSellingBrandItem col s2">
+      <div className=" flex-container border">
+        <div className="padding">
           <img src={"/images/logos/" + image} alt={image}></img>
         </div>
-        <div class="borderTop padding">
-          <div class="offDiv border">Upto 5% off</div>
-          <div class="button">
-            <a href="brand.html" class="waves-effect waves-light btn-small">
+        <div className="borderTop padding">
+          <div className="offDiv border">Upto 5% off</div>
+          <div className="button">
+            <a href="brand.html" className="waves-effect waves-light btn-small">
               SHOP NOW
             </a>
           </div>

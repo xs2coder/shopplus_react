@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const DiscountsOffersFavouritesItem = ({heading,initialSlide}) => {
+const DiscountsOffersFavouritesItem = ({ heading, initialSlide }) => {
   const settings = {
     // dots: true,
     infinite: true,
@@ -11,7 +11,7 @@ const DiscountsOffersFavouritesItem = ({heading,initialSlide}) => {
     slidesToShow: 2,
     slidesToScroll: 1,
     swipeToSlide: true,
-    initialSlide:parseInt(initialSlide)
+    initialSlide: parseInt(initialSlide),
   };
 
   const renderSlides = () =>
@@ -26,15 +26,15 @@ const DiscountsOffersFavouritesItem = ({heading,initialSlide}) => {
       "logos/8.png",
       "logos/9.png",
       "logos/10.png",
-    ].map((logo) => (
-      <div class="logo border">
+    ].map((logo, key) => (
+      <div key={key} className="logo border">
         <img src={"/images/" + logo} alt={logo}></img>
       </div>
     ));
 
   return (
     <div className="discountsOffersFavouritesItem">
-      <h3 class="fs-16 fw-400 pb-2 mb-2 border-bottom">{heading}</h3>
+      <h3 className="fs-16 fw-400 pb-2 mb-2 border-bottom">{heading}</h3>
       <Slider {...settings}>{renderSlides()}</Slider>
     </div>
   );

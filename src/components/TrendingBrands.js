@@ -5,7 +5,6 @@ import Slider from "react-slick";
 
 const TrendingBrands = () => {
   const settings = {
-    // dots: true,
     infinite: true,
     speed: 750,
     slidesToShow: 6,
@@ -43,12 +42,12 @@ const TrendingBrands = () => {
         brandImage: "tranding-brand/7.jpg",
         brandLogo: "tranding-brand/1.png",
       },
-    ].map((brand) => (
-      <div class=" flex-container">
-        <div class="brandImage padding">
+    ].map((brand, key) => (
+      <div key={key} className=" flex-container">
+        <div className="brandImage padding">
           <img src={"/images/" + brand.brandImage} alt={brand.brandImage}></img>
         </div>
-        <div class="brandLogo padding">
+        <div className="brandLogo padding">
           <img src={"/images/" + brand.brandLogo} alt={brand.brandLogo}></img>
         </div>
       </div>
@@ -56,8 +55,8 @@ const TrendingBrands = () => {
 
   return (
     <div className="trendingBrands">
-      <div class="col-12">
-        <h3 class="fs-22 text-uppercase fw-700 text-muted">
+      <div className="col-12">
+        <h3 className="fs-22 text-uppercase fw-700 text-muted">
           <span>Trending Brands</span>
         </h3>
       </div>
