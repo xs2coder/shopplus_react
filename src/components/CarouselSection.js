@@ -14,11 +14,11 @@ const CarouselSection = () => {
   };
 
   return (
-    <Slider className="carouselSection" {...settings}>
-      <div className="logo border">
+    <Slider className="carousel-section" {...settings}>
+      <div>
         <img src="/images/banner.jpg" alt="First slide"></img>
       </div>
-      <div className="logo border">
+      <div>
         <img src="/images/banner.jpg" alt="First slide"></img>
       </div>
     </Slider>

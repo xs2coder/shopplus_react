@@ -28,11 +28,11 @@ const TrendingBrands = () => {
       },
       {
         brandImage: "tranding-brand/4.jpg",
-        brandLogo: "tranding-brand/4.png",
+        brandLogo: "tranding-brand/5.png",
       },
       {
         brandImage: "tranding-brand/5.jpg",
-        brandLogo: "tranding-brand/5.png",
+        brandLogo: "tranding-brand/4.png",
       },
       {
         brandImage: "tranding-brand/6.jpg",
@@ -44,23 +44,37 @@ const TrendingBrands = () => {
       },
     ].map((brand, key) => (
       <div key={key} className=" flex-container">
-        <div className="brandImage padding">
-          <img src={"/images/" + brand.brandImage} alt={brand.brandImage}></img>
-        </div>
-        <div className="brandLogo padding">
-          <img src={"/images/" + brand.brandLogo} alt={brand.brandLogo}></img>
+        <div className=" ">
+          <img
+            className="width-100 rounded border-off-white"
+            src={"/images/" + brand.brandImage}
+            alt={brand.brandImage}
+          ></img>
+          <div className="padding-x-10 padding-bottom-15 text-align-center">
+            <div className="off-logo ">
+              <img
+              className="margin-auto"
+                src={"/images/" + brand.brandLogo}
+                alt={brand.brandLogo}
+              ></img>
+            </div>
+          </div>
         </div>
       </div>
     ));
 
   return (
-    <div className="trendingBrands">
-      <div className="col-12">
-        <h3 className="fs-22 text-uppercase fw-700 text-muted">
-          <span>Trending Brands</span>
-        </h3>
+    <div className="container">
+      <div className="row">
+        <div className="col s12">
+          <h3 className="font-size-22 text-uppercase font-weight-700 text-muted margin-bottom-8">
+            <span>Trending Brands</span>
+          </h3>
+        </div>
+        <div className="col s12">
+          <Slider {...settings}>{renderSlides()}</Slider>
+        </div>
       </div>
-      <Slider {...settings}>{renderSlides()}</Slider>
     </div>
   );
 };

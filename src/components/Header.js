@@ -1,0 +1,52 @@
+import React from "react";
+
+const Header = () => {
+  return (
+    <header className="negative-margin-left-right border-bottom-off-white">
+      <div className="container text-align-right">
+        <a
+          href="#"
+          className="link-text"
+          data-toggle="modal"
+          data-target="#login"
+        >
+          Login/Register
+        </a>
+      </div>
+      <div className="container flex-container padding-top-16 padding-bottom-16">
+        <div className="flex-item flex-container">
+          <div
+            class="flex-item hamburger-icon margin-right-8"
+            id="desktop-hamburger"
+          >
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+          </div>
+          <span className="flex-item">
+            <a href="tel:18001033314">
+              <img src="images/call.png" alt="logo" />
+            </a>{" "}
+          </span>
+          <span class="flex-item font-size-16 font-weight-700">
+            1800-103-3314
+          </span>
+        </div>
+        <div className="flex-item flex-basis-33">
+          <div class="search">
+            <input
+              type="text"
+              name=""
+              class="form-control"
+              placeholder="Search by Brand / Product"
+            />
+          </div>
+        </div>
+        <div className="flex-item">
+          <img src="/images/logo.png" />
+        </div>
+      </div>
+    </header>
+  );
+};
+export default Header;

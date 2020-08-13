@@ -12,6 +12,7 @@ const DiscountsOffersFavouritesItem = ({ heading, initialSlide }) => {
     slidesToScroll: 1,
     swipeToSlide: true,
     initialSlide: parseInt(initialSlide),
+    // centerPadding:"50px"
   };
 
   const renderSlides = () =>
@@ -27,14 +28,14 @@ const DiscountsOffersFavouritesItem = ({ heading, initialSlide }) => {
       "logos/9.png",
       "logos/10.png",
     ].map((logo, key) => (
-      <div key={key} className="logo border">
-        <img src={"/images/" + logo} alt={logo}></img>
+      <div key={key} className="border-off-white">
+        <img className="margin-auto" src={"/images/" + logo} alt={logo}></img>
       </div>
     ));
 
   return (
-    <div className="discountsOffersFavouritesItem">
-      <h3 className="fs-16 fw-400 pb-2 mb-2 border-bottom">{heading}</h3>
+    <div className="">
+      <h3 className="font-size-16 font-weight-400 border-bottom-off-white padding-bottom-8 margin-bottom-8">{heading}</h3>
       <Slider {...settings}>{renderSlides()}</Slider>
     </div>
   );

@@ -4,8 +4,8 @@ const Navbar = ({ categories }) => {
   const renderNavbar = (props) =>
     props.map((category, key) => (
       <a key={key} className="flex-item" href="sass.html">
-        <div className="flex-container">
-          <div>
+        <div className="flex-container padding-top-10">
+          <div className="nav-icon">
             <img src={category.icon_url} alt={category.name} />
           </div>
 
@@ -14,9 +14,9 @@ const Navbar = ({ categories }) => {
       </a>
     ));
   return (
-    <div className="row">
+    <div className="row container margin-bottom-none">
       <div className="nav-wrapper">
-        <div className=" nav-item flex-container">
+        <div className="nav-item flex-container">
           {renderNavbar(categories)}
         </div>
       </div>
