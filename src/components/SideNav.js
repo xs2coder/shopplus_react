@@ -31,7 +31,6 @@ const SideNav = ({ slider, setSlider, categories }) => {
           </div>
         </div>
       </div>
-      ;
     </>
   );
 };
