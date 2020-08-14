@@ -1,24 +1,38 @@
 import React from "react";
 
 const Navbar = ({ categories }) => {
+  const renderDropdown = (props) =>
+  props.map((brand, key) => (
+        <a key={key}
+          class="dropdown-item"
+          href="index.html"
+        >
+          {brand}
+        </a>
+  ));
   const renderNavbar = (props) =>
     props.map((category, key) => (
-      <a key={key} className="flex-item" href="sass.html">
-        <div className="flex-container padding-top-10">
-          <div className="nav-icon">
-            <img src={category.icon_url} alt={category.name} />
-          </div>
-
-          <div className="name">{category.name}</div>
+      <li key={key} class="dropdown spriteMenu">
+        <a href="index.html">
+          <figure>
+            <img
+              src={category.icon_url}
+              alt={category.name}
+            />
+            <figcaption>{category.name}</figcaption>
+          </figure>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="Accessories-Dropdown">
+        {renderDropdown(category.brands_name.split(','))}
         </div>
-      </a>
+      </li>
     ));
   return (
-    <div className="row container margin-bottom-none">
-      <div className="nav-wrapper">
-        <div className="nav-item flex-container">
+    <div class="row">
+      <div class="container px-0 desktopNav bg-white">
+        <ul class="border-bottom d-none d-lg-block">
           {renderNavbar(categories)}
-        </div>
+        </ul>
       </div>
     </div>
   );
