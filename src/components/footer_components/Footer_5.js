@@ -4,9 +4,9 @@ const Footer_5 = () => {
   return (
     <React.Fragment>
 <div class="container-fluid footer-arya border-top-ccc">
-          <div class="row">
+          <div class="row margin-bottom-none">
             <div class="container">
-              <div class="row">
+              <div class="row margin-bottom-none">
                 <div class="col s12 text-align-right margin-top-0">
                   <ul class="payment-logos display-inline-block">
                     <li class="visa">Visa</li>

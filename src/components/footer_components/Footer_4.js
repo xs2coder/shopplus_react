@@ -3,10 +3,10 @@ import React from "react";
 const Footer_4 = () => {
   return (
     <React.Fragment>
-      <div class="container footer-arya">
-        <div class="row">
+      <div class="container footer-arya padding-top-0">
+        <div class="row margin-bottom-none">
           <div class="col m12">
-            <div class="row">
+            <div class="row margin-bottom-none">
               <div class="col s3 collepsMobileOne">
                 <h4>ABOUT</h4>
                 <ul class="footer-linke">

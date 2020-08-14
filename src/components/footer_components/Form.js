@@ -5,13 +5,13 @@ const Form = () => {
   return (
     <React.Fragment>
       {/* <div class="container-fluid"> */}
-        <div class="row">
+        <div class="row margin-bottom-none border-bottom-light padding-bottom-16">
           <div class="container">
             <div class="justify-center display-flex">
               <div class="col l8 margin-auto">
-                <div class="row">
+                <div class="row margin-bottom-none">
                   <div class="col m6 padding-right-48">
-                    <div class="row">
+                    <div class="row margin-bottom-none">
                       <div class="col s12">
                         <h5 className="margin-bottom-2 font-size-16 font-weight-700 text-grey float-left">Subscribe</h5>
                       </div>
@@ -48,7 +48,7 @@ const Form = () => {
                   </div>
 
                   <div class="col m6 padding-left-48">
-                    <div class="row">
+                    <div class="row margin-bottom-none">
                       <div class="col-12 padding-left-8">
                         <h5 className="margin-bottom-2 font-size-16 font-weight-700 text-grey float-left">Download</h5>
                       </div>

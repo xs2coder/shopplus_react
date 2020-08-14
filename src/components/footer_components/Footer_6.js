@@ -3,8 +3,8 @@ import React from "react";
 const Footer_6 = () => {
   return (
     <React.Fragment>
-<div class="container-fluid footerLast">
-            <div class="row">
+<div class="container-fluid footerLast margin-top-0">
+            <div class="row margin-bottom-none">
                 <div class="container">
                     <div class="row align-items-center text-center">
                         <div class="col s12 m8 text-align-left">© 2016. Vouchagram India Pvt. Ltd <span class="padding-x-8">|</span> <a href="#">Privacy Policy</a><span class="padding-x-8">|</span><a href="#">Terms of Use</a> </div>

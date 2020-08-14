@@ -1,7 +1,10 @@
-import React from "react";
+import React,{useState} from "react";
+import SideNav from "./SideNav";
 
-const Header = () => {
+const Header = ({ categories }) => {
+  const [slider, setSlider] = useState(false);
   return (
+    <React.Fragment>
     <header className="negative-margin-left-right border-bottom-off-white">
       <div className="container text-align-right">
         <a
@@ -18,6 +21,7 @@ const Header = () => {
           <div
             class="flex-item hamburger-icon margin-right-8"
             id="desktop-hamburger"
+            onClick={() => setSlider(slider => !slider)}
           >
             <div class="top"></div>
             <div class="middle"></div>
@@ -47,6 +51,8 @@ const Header = () => {
         </div>
       </div>
     </header>
+    <SideNav slider={slider} setSlider={setSlider} categories={categories}/>
+    </React.Fragment>
   );
 };
 export default Header;

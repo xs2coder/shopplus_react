@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
+
 import Navbar from "./components/Navbar";
 import CarouselSection from "./components/CarouselSection";
 import BestSellingBrands from "./components/BestSellingBrands";
@@ -31,7 +32,8 @@ const ShopPlus = () => {
   return (
     <React.Fragment>
       <div className="container-fluid">
-        <Header />
+        <Header categories={categories}/>
+        
         {!isLoaded && (
           <div className="progress">
             <div className="indeterminate"></div>
