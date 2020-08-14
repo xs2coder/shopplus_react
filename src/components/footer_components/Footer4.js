@@ -11,19 +11,19 @@ const Footer4 = () => {
                 <h4>ABOUT</h4>
                 <ul className="footer-linke">
                   <li>
-                    <a href="#">Contact Us</a>
+                    <a href="index.html">Contact Us</a>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <a href="index.html">About Us</a>
                   </li>
                   <li>
-                    <a href="#">Careers</a>
+                    <a href="index.html">Careers</a>
                   </li>
                   <li>
-                    <a href="#">Blogs</a>
+                    <a href="index.html">Blogs</a>
                   </li>
                   <li>
-                    <a href="#">Press</a>
+                    <a href="index.html">Press</a>
                   </li>
                 </ul>
               </div>
@@ -31,19 +31,19 @@ const Footer4 = () => {
                 <h4>CUSTOMER CARE</h4>
                 <ul className="footer-linke">
                   <li>
-                    <a href="#">Helpline 1800419915</a>
+                    <a href="index.html">Helpline 1800419915</a>
                   </li>
                   <li>
-                    <a href="#">Request a Call Back</a>
+                    <a href="index.html">Request a Call Back</a>
                   </li>
                   <li>
                     <a href="mailto:help@gyftr.com">help@gyftr.com</a>
                   </li>
                   <li>
-                    <a href="#">FAQs</a>
+                    <a href="index.html">FAQs</a>
                   </li>
                   <li>
-                    <a href="#">Program T&amp;C</a>
+                    <a href="index.html">Program T&amp;C</a>
                   </li>
                 </ul>
               </div>
@@ -51,16 +51,16 @@ const Footer4 = () => {
                 <h4>MY ACCOUNT</h4>
                 <ul className="footer-linke">
                   <li>
-                    <a href="#">Login</a>
+                    <a href="index.html">Login</a>
                   </li>
                   <li>
-                    <a href="#">My Transactions</a>
+                    <a href="index.html">My Transactions</a>
                   </li>
                   <li>
-                    <a href="#">My Profile</a>
+                    <a href="index.html">My Profile</a>
                   </li>
                   <li>
-                    <a href="#">About BPCL PetroMiles</a>
+                    <a href="index.html">About BPCL PetroMiles</a>
                   </li>
                 </ul>
               </div>
@@ -70,17 +70,17 @@ const Footer4 = () => {
                     <h4>SOCIAL</h4>
                     <ul className="list-inline footer-social">
                       <li className="list-inline-item float-left margin-right-8">
-                        <a href="#">
+                        <a href="index.html">
                           <i className="fab fa-facebook-square"></i>
                         </a>
                       </li>
                       <li className="list-inline-item float-left margin-right-8">
-                        <a href="#">
+                        <a href="index.html">
                           <i className="fab fa-twitter-square"></i>
                         </a>
                       </li>
                       <li className="list-inline-item float-left">
-                        <a href="#">
+                        <a href="index.html">
                           <i className="fab fa-instagram"></i>
                         </a>
                       </li>

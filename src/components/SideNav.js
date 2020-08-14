@@ -24,7 +24,7 @@ const SideNav = ({ slider, setSlider, categories }) => {
             >
               {categories.map((category, key) => (
                 <li key={key} onClick={() => setSlider((slider) => !slider)}>
-                  <a onClick={() => setSlider(slider => !slider)} className="waves-effect">{category.name}</a>
+                  <a href="index.html" onClick={() => setSlider(slider => !slider)} className="waves-effect">{category.name}</a>
                 </li>
               ))}
             </ul>

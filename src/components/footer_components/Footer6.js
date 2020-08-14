@@ -10,9 +10,9 @@ const Footer6 = () => {
               <div className="col s12 m8 text-align-left">
                 © 2016. Vouchagram India Pvt. Ltd{" "}
                 <span className="padding-x-8">|</span>{" "}
-                <a href="#">Privacy Policy</a>
+                <a href="index.html">Privacy Policy</a>
                 <span className="padding-x-8">|</span>
-                <a href="#">Terms of Use</a>{" "}
+                <a href="index.html">Terms of Use</a>{" "}
               </div>
               <div className="col s12 m4 text-align-right padding-top-0">
                 <div className="display-inline-block text-align-right">
@@ -21,7 +21,6 @@ const Footer6 = () => {
                   </span>
                   <a
                     href="https://www.gyftr.com/"
-                    target="_blank"
                     className="float-right"
                   >
                     <img src="images/footer-logo.png" alt="GyFtr" />

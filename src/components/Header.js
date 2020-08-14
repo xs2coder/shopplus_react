@@ -8,7 +8,7 @@ const Header = ({ categories }) => {
     <header className="negative-margin-left-right border-bottom-off-white">
       <div className="container text-align-right">
         <a
-          href="#"
+          href="index.html"
           className="link-text"
           data-toggle="modal"
           data-target="#login"
@@ -47,7 +47,7 @@ const Header = ({ categories }) => {
           </div>
         </div>
         <div className="flex-item">
-          <img src="/images/logo.png" />
+          <img src="/images/logo.png" alt="logo" />
         </div>
       </div>
     </header>

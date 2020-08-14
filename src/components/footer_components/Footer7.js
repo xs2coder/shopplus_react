@@ -9,7 +9,6 @@ const Footer7 = () => {
           5004/ +91 22 4406 6666 or<br></br> visit{" "}
           <a
             href="https://www.indusind.com"
-            target="_blank"
             className="text-white"
           >
             www.indusind.com
