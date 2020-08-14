@@ -3,8 +3,8 @@ import React from "react";
 const SideNav = ({ slider, setSlider, categories }) => {
   return (
     <>
-      <div class="off-canvas-nav">
-        <div class="left-nav-toplink">
+      <div className="off-canvas-nav">
+        <div className="left-nav-toplink">
           <div
             className="sidenav-overlay left-nav"
             onClick={() => setSlider((slider) => !slider)}

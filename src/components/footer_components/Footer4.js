@@ -1,15 +1,15 @@
 // this is for about, social etc.
 import React from "react";
-const Footer_4 = () => {
+const Footer4 = () => {
   return (
     <React.Fragment>
-      <div class="container footer-arya padding-top-0">
-        <div class="row margin-bottom-none">
-          <div class="col m12">
-            <div class="row margin-bottom-none">
-              <div class="col s3 collepsMobileOne">
+      <div className="container footer-arya padding-top-0">
+        <div className="row margin-bottom-none">
+          <div className="col m12">
+            <div className="row margin-bottom-none">
+              <div className="col s3 collepsMobileOne">
                 <h4>ABOUT</h4>
-                <ul class="footer-linke">
+                <ul className="footer-linke">
                   <li>
                     <a href="#">Contact Us</a>
                   </li>
@@ -27,9 +27,9 @@ const Footer_4 = () => {
                   </li>
                 </ul>
               </div>
-              <div class="col s3 collepsMobileTwo">
+              <div className="col s3 collepsMobileTwo">
                 <h4>CUSTOMER CARE</h4>
-                <ul class="footer-linke">
+                <ul className="footer-linke">
                   <li>
                     <a href="#">Helpline 1800419915</a>
                   </li>
@@ -47,9 +47,9 @@ const Footer_4 = () => {
                   </li>
                 </ul>
               </div>
-              <div class="col s3 collepsMobileThree">
+              <div className="col s3 collepsMobileThree">
                 <h4>MY ACCOUNT</h4>
-                <ul class="footer-linke">
+                <ul className="footer-linke">
                   <li>
                     <a href="#">Login</a>
                   </li>
@@ -64,24 +64,24 @@ const Footer_4 = () => {
                   </li>
                 </ul>
               </div>
-              <div class="col s3">
-                <div class="row">
-                  <div class="col s12 collepsMobileFour">
+              <div className="col s3">
+                <div className="row">
+                  <div className="col s12 collepsMobileFour">
                     <h4>SOCIAL</h4>
-                    <ul class="list-inline footer-social">
-                      <li class="list-inline-item float-left margin-right-8">
+                    <ul className="list-inline footer-social">
+                      <li className="list-inline-item float-left margin-right-8">
                         <a href="#">
-                          <i class="fab fa-facebook-square"></i>
+                          <i className="fab fa-facebook-square"></i>
                         </a>
                       </li>
-                      <li class="list-inline-item float-left margin-right-8">
+                      <li className="list-inline-item float-left margin-right-8">
                         <a href="#">
-                          <i class="fab fa-twitter-square"></i>
+                          <i className="fab fa-twitter-square"></i>
                         </a>
                       </li>
-                      <li class="list-inline-item float-left">
+                      <li className="list-inline-item float-left">
                         <a href="#">
-                          <i class="fab fa-instagram"></i>
+                          <i className="fab fa-instagram"></i>
                         </a>
                       </li>
                     </ul>
@@ -95,4 +95,4 @@ const Footer_4 = () => {
     </React.Fragment>
   );
 };
-export default Footer_4;
+export default Footer4;

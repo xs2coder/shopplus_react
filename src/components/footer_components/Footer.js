@@ -1,20 +1,20 @@
 import React from "react";
 import FooterCategoryBrands from "./FooterCategoryBrands";
 import Form from "./Form";
-import Footer_4 from "./Footer_4";
-import Footer_5 from "./Footer_5";
-import Footer_6 from "./Footer_6";
-import Footer_7 from "./Footer_7";
+import Footer4 from "./Footer4";
+import Footer5 from "./Footer5";
+import Footer6 from "./Footer6";
+import Footer7 from "./Footer7";
 
 const Footer = () => {
   return (
     <footer>
       <FooterCategoryBrands />
-      <Form/>
-      <Footer_4/>
-      <Footer_5/>
-      <Footer_6/>
-      <Footer_7/>
+      <Form />
+      <Footer4 />
+      <Footer5 />
+      <Footer6 />
+      <Footer7 />
     </footer>
   );
 };

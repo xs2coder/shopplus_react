@@ -19,29 +19,29 @@ const Header = ({ categories }) => {
       <div className="container flex-container padding-top-16 padding-bottom-16">
         <div className="flex-item flex-container">
           <div
-            class="flex-item hamburger-icon margin-right-8"
+            className="flex-item hamburger-icon margin-right-8"
             id="desktop-hamburger"
             onClick={() => setSlider(slider => !slider)}
           >
-            <div class="top"></div>
-            <div class="middle"></div>
-            <div class="bottom"></div>
+            <div className="top"></div>
+            <div className="middle"></div>
+            <div className="bottom"></div>
           </div>
           <span className="flex-item">
             <a href="tel:18001033314">
               <img src="images/call.png" alt="logo" />
             </a>{" "}
           </span>
-          <span class="flex-item font-size-16 font-weight-700">
+          <span className="flex-item font-size-16 font-weight-700">
             1800-103-3314
           </span>
         </div>
         <div className="flex-item flex-basis-33">
-          <div class="search">
+          <div className="search">
             <input
               type="text"
               name=""
-              class="form-control"
+              className="form-control"
               placeholder="Search by Brand / Product"
             />
           </div>

@@ -7,8 +7,8 @@ const Banner = ({ image, heading, description }) => {
       <div className={`col s12 ${image.length>1 ? "m6" :"m3"} padding-16 padding-right-0`}>
         <div className=" flex-container border-off-white rounded padding-16">
           <div>
-            <h3 class="h4 font-weight-700 text-uppercase margin-none">{heading}</h3>
-            <p class="font-size-12 margin-bottom-8">{description}</p>
+            <h3 className="h4 font-weight-700 text-uppercase margin-none">{heading}</h3>
+            <p className="font-size-12 margin-bottom-8">{description}</p>
           </div>
           {image.map((image, key) => (
             <div key={key} className="margin-bottom-16">

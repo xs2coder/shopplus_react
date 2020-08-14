@@ -32,8 +32,8 @@ const ShopPlus = () => {
   return (
     <React.Fragment>
       <div className="container-fluid">
-        <Header categories={categories}/>
-        
+        <Header categories={categories} />
+
         {!isLoaded && (
           <div className="progress">
             <div className="indeterminate"></div>
